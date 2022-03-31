@@ -116,5 +116,12 @@ figcaption {
 
   .rules__images figure {
     width: 47%;
+    margin: 1rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .rules {
+    max-width: 50vw;
   }
 }
