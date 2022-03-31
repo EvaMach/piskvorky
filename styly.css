@@ -14,7 +14,7 @@ body {
 
 .card {
   text-align: center;
-  max-width: 22rem;
+  max-width: 20rem;
   margin: 2rem auto;
 }
 
@@ -32,7 +32,15 @@ body {
   padding: 1rem;
 }
 
-.card__text h1 {
+.rules {
+  text-align: left;
+}
+
+.rules li {
+  margin-bottom: 0.5rem;
+}
+
+h1 {
   font-family: 'Lobster', 'cursive';
   font-size: 50px;
   font-weight: 100;
@@ -44,6 +52,7 @@ body {
 }
 
 .card__button a {
+  display: block;
   text-decoration: none;
   color: #ffffff;
 }
@@ -63,4 +72,8 @@ body {
 
 .card__button--play:hover {
   background-color: #0090e9;
+}
+
+.instructions__image {
+  max-width: 100%;
 }
