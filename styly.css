@@ -29,7 +29,7 @@ body {
 
 .card__text {
   background-color: #283e50;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 h1 {
@@ -66,7 +66,7 @@ h1 {
   background-color: #0090e9;
 }
 
-.rules {
+.rules__text {
   border-radius: 5px 5px 0 0;
 }
 
@@ -79,14 +79,13 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-.rules__images {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.rules__images figure {
+  margin: 2rem 0;
+  text-align: center;
 }
 
 .rules__image {
-  width: 16rem;
+  width: 100%;
 }
 
 figcaption {
@@ -98,4 +97,24 @@ figcaption {
 .text-icon {
   height: 1em;
   filter: invert(1);
+}
+
+@media (min-width: 768px) {
+  .rules {
+    max-width: 80vw;
+  }
+
+  .rules__list {
+    margin-bottom: 1rem;
+  }
+
+  .rules__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .rules__images figure {
+    width: 47%;
+  }
 }
