@@ -9,17 +9,13 @@ body {
   font-size: 15px;
   font-family: sans-serif;
   line-height: 25px;
-}
-
-main {
-  display: flex;
-  justify-content: center;
+  margin: 0;
 }
 
 .card {
   text-align: center;
   max-width: 22rem;
-  margin: 2rem 0 3rem 0;
+  margin: 2rem auto;
 }
 
 .card__img {
@@ -52,19 +48,19 @@ main {
   color: #ffffff;
 }
 
-.rules-button {
+.card__button--rules {
   background-color: #1fcca4;
 }
 
-.rules-button:hover {
+.card__button--rules:hover {
   background-color: #1cbb96;
 }
 
-.play-button {
+.card__button--play {
   border-top: 1px solid black;
   background-color: #0197f6;
 }
 
-.play-button:hover {
+.card__button--play:hover {
   background-color: #0090e9;
 }
