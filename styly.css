@@ -1,3 +1,10 @@
+:root {
+  --green-color: #1fcca4;
+  --gren-color-hover: #1cbb96;
+  --blue-color: #0197f6;
+  --blue-color-hover: #0090e9;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,7 +19,7 @@ body {
   line-height: 25px;
 }
 
-.card {
+main {
   text-align: center;
   max-width: 20rem;
   margin: 2rem auto;
@@ -51,20 +58,20 @@ h1 {
 }
 
 .card__button--rules {
-  background-color: #1fcca4;
+  background-color: var(--green-color);
 }
 
 .card__button--rules:hover {
-  background-color: #1cbb96;
+  background-color: var(--gren-color-hover);
 }
 
 .card__button--play {
   border-top: 1px solid black;
-  background-color: #0197f6;
+  background-color: var(--blue-color);
 }
 
 .card__button--play:hover {
-  background-color: #0090e9;
+  background-color: var(--blue-color-hover);
 }
 
 .rules__list {
@@ -94,6 +101,61 @@ figcaption {
 .text-icon {
   height: 1em;
   filter: invert(1);
+}
+
+.game {
+  max-width: 80vmin;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.game-header__turn span {
+  margin-right: 0.5rem;
+}
+
+.game-header__button {
+  padding: 0.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.game-header__button--home {
+  background-color: var(--green-color);
+}
+
+.game-header__button--home:hover {
+  background-color: var(--gren-color-hover);
+}
+
+.game-header__button--restart {
+  background-color: var(--blue-color);
+}
+
+.game-header__button--restart:hover {
+  background-color: var(--blue-color-hover);
+}
+
+.game-pad {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.game-pad button {
+  width: calc(100% / 10);
+  aspect-ratio: 1 / 1;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: solid black;
+}
+
+.game__pad button:hover {
+  background-color: rgba(255, 255, 255, 0.166);
 }
 
 @media (min-width: 768px) {
