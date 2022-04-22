@@ -6,11 +6,7 @@ for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', (event) => {
     if (buttons[i].classList.length < 1) {
       event.target.classList.add(`board__field--${turn}`, 'board__field');
-      if (turn === 'circle') {
-        turn = 'cross';
-      } else {
-        turn = 'circle';
-      }
+      turn = turn === 'circle' ? 'cross' : 'circle';
       turnImage.src = `pravidla_images/${turn}.svg`;
       event.target.disabled = true;
     }
