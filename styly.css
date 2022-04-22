@@ -170,11 +170,34 @@ figcaption {
   background-color: rgba(246, 246, 246, 0.355);
   border: 1px solid rgb(73, 73, 73);
   cursor: pointer;
+  background-size: 10%;
 }
 
 .game-pad button:hover,
 .game-pad button:focus {
   background-color: rgba(255, 255, 255, 0.605);
+}
+
+.game-pad button:active {
+  border: 2px solid rgb(46, 46, 46);
+  border-radius: 5px;
+  outline: 1px solid white;
+  transition: all 0.1s ease;
+}
+
+button.board__field {
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.15s ease;
+}
+
+.board__field--circle {
+  background-image: url('pravidla_images/circle.svg');
+}
+
+.board__field--cross {
+  background-image: url('pravidla_images/cross.svg');
 }
 
 @media (min-width: 768px) {
